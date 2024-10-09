@@ -1,4 +1,8 @@
 import pkg from 'pg';
+import dotenv from 'dotenv'; // Importiere dotenv
+
+// Lade die Umgebungsvariablen
+dotenv.config();
 
 const { Pool } = pkg;
 
@@ -17,12 +21,13 @@ const createTable = async () => {
                 id SERIAL PRIMARY KEY,
                 title VARCHAR(255) NOT NULL,
                 text TEXT NOT NULL
-                );
-            `);
-
+            );
+        `);
+        console.log('Tabelle erfolgreich erstellt oder existiert bereits.'); // Bestätigung
     } catch (error) {
-        console.error('Error creating table: ', error);
+        console.error('Fehler beim Erstellen der Tabelle: ', error);
     }
-}
+};
 
+// Exportiere den Pool und die createTable-Funktion
 export { pool, createTable };

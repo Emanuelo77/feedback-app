@@ -1,23 +1,20 @@
-import { errorHandler } from '../src/middleware/errorHandler'; // Import des Error Handlers
-import httpMocks from 'node-mocks-http'; // Mock HTTP Module
+import { errorHandler } from '../src/middleware/errorHandler';
+import express from 'express';
+import request from 'supertest';
 
-describe('Error Handler', () => {
-    it('sollte eine Fehlerantwort mit dem Standard Status Code senden', () => {
-        // Erstelle Mock-Objekte für die Anfrage und Antwort
-        const req = httpMocks.createRequest();
-        const res = httpMocks.createResponse();
-        const next = jest.fn(); // Mock der next-Funktion
+const app = express();
 
-        // Simuliere einen Fehler
-        const error = new Error('Testfehler');
+app.get('/error', (req, res) => {
+    throw new Error('Test Error');
+});
 
-        // Rufe den Error Handler auf
-        errorHandler(error, req, res, next);
+app.use(errorHandler);
 
-        // Überprüfe den Statuscode
-        expect(res.statusCode).toBe(500); // Stelle sicher, dass der Statuscode korrekt ist
-        
-        // Überprüfe die Antwortdaten
-        expect(res._getJSONData()).toEqual({ message: 'Internal Server Error' }); // Stelle sicher, dass die Struktur korrekt ist
+describe('Error Handler Middleware', () => {
+    it('should handle errors and return 500', async () => {
+        const response = await request(app).get('/error');
+
+        expect(response.status).toBe(500);
+        expect(response.body.error).toBe('Internal Server Error');
     });
 });

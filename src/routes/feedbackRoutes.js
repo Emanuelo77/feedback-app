@@ -1,50 +1,30 @@
 import express from 'express';
-import { addFeedback, getAllFeedback, deleteFeedbackByTitle } from '../controllers/feedbackController.js';
-import { feedbackValidation } from '../middleware/validation.js'
-import { sendSuccess, sendError } from '../utils/responseHelper.js';
+const router = express.Router();
 
-const feedbackRouter = express.Router();
-
-// POST /feedback - fuegt neues Feedback hinzu
-feedbackRouter.post('/feedback', feedbackValidation, async (req, res) => { 
-
-    try {
-        const { title, text } = req.body;
-        const newFeedback = await addFeedback(title, text);
-        sendSuccess(res, newFeedback, "Feedback erfolgreich gespeichert.", 201);
-    } catch (error) {
-        sendError(res, "Fehler beim Speichern des Feedbacks.");
-    }
-
-});
-
-// GET /feedback - gibt alle Feedback Eintraege zurueck
-feedbackRouter.get('/feedback', async (req, res) => {
-
-    try {
-        const feedback = await getAllFeedback();
-        sendSuccess(res, feedback, "Feedback erfolgreich abgefragt.");
-
-    } catch (error) {
-        sendError(res, "Fehler beim Abruf des Feedbacks.");
-    }
-
-});
-
-// DELETE /feedback/title - Loescht Feedback mit dem gegebenen title
-feedbackRouter.delete('/feedback/:title', async (req, res) => {
-
-    try {
-        const { title } = req.params;
-
-        const result = await deleteFeedbackByTitle(title);
-        if (result.rowCount === 0) {
-            return sendError(res, "Feedback nicht gefunden.", 404);
-        }
-        sendSuccess(res, null, "Feedback erfolgreich geloescht.");
-    } catch (error) {
-        sendError(res, "Fehler beim Loeschen des Feedbacks.");
+// Zeile 16: GET Feedback by ID
+router.get('/feedback/:id', (req, res) => {
+    const feedback = getFeedbackById(req.params.id);  // Beispiel für eine Datenbankabfrage
+    if (feedback) {
+        res.status(200).json(feedback);
+    } else {
+        res.status(404).json({ message: 'Feedback not found' });
     }
 });
 
-export default feedbackRouter;
+// Zeile 29: POST Feedback
+router.post('/feedback', (req, res) => {
+    const newFeedback = saveFeedback(req.body);  // Beispiel für Speichern von Feedback
+    res.status(201).json(newFeedback);
+});
+
+// Zeile 46: DELETE Feedback
+router.delete('/feedback/:id', (req, res) => {
+    const isDeleted = deleteFeedback(req.params.id);  // Beispiel für Löschen von Feedback
+    if (isDeleted) {
+        res.status(204).send();
+    } else {
+        res.status(404).json({ message: 'Feedback not found' });
+    }
+});
+
+export default router;

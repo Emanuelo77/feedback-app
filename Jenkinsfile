@@ -11,7 +11,7 @@ pipeline {
     }
     
     environment {
-        GITHUB_REPO = 'https://github.com/atamankina/feedback-app.git'
+        GITHUB_REPO = 'https://github.com/Emanuelo77/feedback-app.git'
         DOCKER_CREDENTIALS_ID = 'dockerhub-token'
         DOCKER_REPO = 'galaataman/feedback-app'
         IMAGE_TAG = "${BUILD_NUMBER}"
@@ -24,6 +24,18 @@ pipeline {
                 echo 'Checking out code...'
                 git url: "${GITHUB_REPO}", branch: 'main'
             }            
+        }
+        stage('Run Unit Tests') {
+            steps {
+                echo 'Running unit tests...'
+                container('node') {
+                    sh '''
+                        npm install
+                        npm test  -- --maxWorkers=50%
+                    '''
+                }
+                echo 'Unit tests completed successfully.'
+            }
         }       
         stage('Docker Build') {   
             steps {

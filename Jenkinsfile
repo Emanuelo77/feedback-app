@@ -11,9 +11,9 @@ pipeline {
     }
     
     environment {
-       
         DOCKER_CREDENTIALS_ID = 'dockerhub-token'
-   
+        GITHUB_REPO = 'https://github.com/Emanuelo77/feedback-app.git' // Dein GitHub-Repo
+        DOCKER_REPO = 'emanuelo77/feedback-app' // Dein Docker-Repo
         IMAGE_TAG = "${BUILD_NUMBER}"
         DOCKER_IMAGE = "${DOCKER_REPO}:${IMAGE_TAG}"
     }
@@ -22,7 +22,7 @@ pipeline {
         stage('Checkout') {           
             steps {
                 echo 'Checking out code...'
-                git url: "${GITHUB_REPO}", branch: 'Emanuel'
+                git url: "${GITHUB_REPO}", branch: 'Emanuel' // Verwendet den "Emanuel"-Branch
             }            
         }       
         stage('Docker Build') {   
@@ -49,7 +49,7 @@ pipeline {
         }
         stage('Kubernetes Deploy App Dependencies') {
             steps {
-                echo 'Deploying API dependencies to kubernetes cluster...'
+                echo 'Deploying API dependencies to Kubernetes cluster...'
                 container('kubectl') {
                     sh 'kubectl apply -f kubernetes/secret.yaml'
                     sh 'kubectl apply -f kubernetes/configmap.yaml'

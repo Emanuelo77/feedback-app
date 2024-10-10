@@ -11,9 +11,9 @@ pipeline {
     }
     
     environment {
-        GITHUB_REPO = 'https://github.com/atamankina/feedback-app.git'
+       
         DOCKER_CREDENTIALS_ID = 'dockerhub-token'
-        DOCKER_REPO = 'galaataman/feedback-app'
+   
         IMAGE_TAG = "${BUILD_NUMBER}"
         DOCKER_IMAGE = "${DOCKER_REPO}:${IMAGE_TAG}"
     }
@@ -22,7 +22,7 @@ pipeline {
         stage('Checkout') {           
             steps {
                 echo 'Checking out code...'
-                git url: "${GITHUB_REPO}", branch: 'main'
+                git url: "${GITHUB_REPO}", branch: 'Emanuel'
             }            
         }       
         stage('Docker Build') {   

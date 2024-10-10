@@ -1,0 +1,455 @@
+[33mcommit ae318a7c1c316cbb1c29d68ca88d0e30186890b3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mEmanuel[m[33m, [m[1;31morigin/Emanuel[m[33m)[m
+Author: Emanuel crisan <emanuelcrisan778@gmail.com>
+Date:   Thu Oct 10 14:10:36 2024 +0200
+
+    Added unit tests for feedbackRoutes.js and improved coverage
+
+[33mcommit 5a748a3767ce9a3f42a40fbaae50a3da3174f8b0[m
+Author: Emanuel crisan <emanuelcrisan778@gmail.com>
+Date:   Wed Oct 9 16:15:44 2024 +0200
+
+    1111
+
+[33mcommit d9780c328ba2383e011834315e59f819d0d977ed[m
+Author: Emanuel crisan <emanuelcrisan778@gmail.com>
+Date:   Wed Oct 9 15:11:55 2024 +0200
+
+    111
+
+[33mcommit 4d1b5cfe5574d07c425e5ec0ab26f9abd27911cc[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 9 13:08:35 2024 +0200
+
+    Adding homework description and code for unit tests.
+
+[33mcommit b51e110a5b902897e4a76cf28e7b0907aefc72dd[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 9 13:06:00 2024 +0200
+
+    Adding initial unit tests.
+
+[33mcommit 1d9f0758e754a67f6bc5055e5799af987c237dba[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 9 10:46:21 2024 +0200
+
+    Fixing and extending with new checks the integration tests.
+
+[33mcommit 3517473468e5ef14fb1633ac9a08652b6d08e049[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 9 10:13:48 2024 +0200
+
+    Fixing the request validation middleare.
+
+[33mcommit 60eb7151b18f031dd175adcbe9141bc61ca4f027[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 9 09:45:58 2024 +0200
+
+    Modifying response helper to send custom status code on success.
+
+[33mcommit 1b145dda9f0d0b0dfc9b2d827a7f4b0ea3be9006[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 9 09:23:48 2024 +0200
+
+    Fixing the DB import in feedback controller.
+
+[33mcommit 0e458c38eaccf2f908f7b42db3f53d1fd5994a7c[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Oct 8 13:14:00 2024 +0200
+
+    Further refactoring: moving request validation to middleware, business logic to controllers, success and error handling to utils.
+
+[33mcommit cf4eb2d44f784dfcd9f0e6db4475b7ed94df59fb[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Oct 8 11:49:33 2024 +0200
+
+    CR-4: Refactoring: modularizing the code.
+
+[33mcommit 818e6f1a08d8dbf6d9bb71c2aa8b6d00495b7353[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Oct 8 10:45:02 2024 +0200
+
+    Checkout stage modified to poit to the main branch in Jenkinsfile.
+
+[33mcommit c55372cc70febc2c8cf8224435be28e881ae8374[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Oct 8 10:38:55 2024 +0200
+
+    Fixing the Jenkinsfile to check the rollout status and deplay the integration test run.
+
+[33mcommit a353b9c369bdaf67aa728056b15a56708029012c[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Oct 8 10:19:38 2024 +0200
+
+    CR-1: Expanding try blocks and adding error output to the app.
+
+[33mcommit dcc30f492caf1db02f7208b8e35c0ca0ec813140[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Oct 7 12:47:33 2024 +0200
+
+    Adding post actions to the Jenkins pipeline.
+
+[33mcommit ee9a4df1af44465a2e38ebf44b7a70742ff9f011[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Oct 7 12:29:56 2024 +0200
+
+    Using build number for versioning docker images in Jenkinsfile.
+
+[33mcommit e82b124230552a26513874483148fb1ee328e363[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Oct 7 11:49:52 2024 +0200
+
+    Fixing the integration test POST feedback expected status code 201.
+
+[33mcommit 52f5776fb9ceda4bf5da990345d13b73f1d078f5[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Oct 7 11:43:22 2024 +0200
+
+    Adding error count metric to the integration tests to fail the pipeline if tests fail.
+
+[33mcommit 05694e098f2933a2ffeb2d05b823d1ad42de105a[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Oct 7 10:58:19 2024 +0200
+
+    Fixing Jenkinsfile, adding steps declaration.
+
+[33mcommit f8a03dc65246dc60741413eddd3c7574549b595f[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Oct 7 10:54:24 2024 +0200
+
+    Adding the app health check stage to Jenkinsfile.
+
+[33mcommit 57682c4341f0cc5c167c2f5b28172b9f204bd53b[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 2 14:55:10 2024 +0200
+
+    Using custom kubectl container in Jenkins pod template.
+
+[33mcommit 611f878caef9131c5b3ee27c620d55955c86be2e[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 2 14:42:31 2024 +0200
+
+    Adding another k6 image to Jenkins agent pod template.
+
+[33mcommit 55259e216f38116e344ad69781880354382cfb47[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 2 12:56:06 2024 +0200
+
+    Adding integration testing stage to the Jenkins pipeline.
+
+[33mcommit 4fbf148984e186f0dd55d6f1e23d2feff0fc7a9e[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 2 12:44:39 2024 +0200
+
+    Changing the Jenkins role config to cluster role.
+
+[33mcommit 682c7f7aa93ef6c67779c20e816cad6c7fa288ae[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 2 12:40:03 2024 +0200
+
+    Adding an additional role config for jenkins service account.
+
+[33mcommit e0c9633f101c25703df68ac48c6b5eb8c91b5774[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 2 12:29:54 2024 +0200
+
+    Adding the depployment stage for API dependecies to Jenkinsfile.
+
+[33mcommit 2f9a554f0a358cb374f0632f464f1b661996ea93[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 2 11:53:07 2024 +0200
+
+    Fixing DELETE /feedback integration tests.
+
+[33mcommit e34a471f7da36d0cef74c32ba5c93aae37523ee8[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 2 11:41:46 2024 +0200
+
+    Adding the test runner function for integration tests.
+
+[33mcommit 80b9465407c5c4f1ab9dd270f99b1669a30f1e2e[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 2 11:36:59 2024 +0200
+
+    Adding GET and DELETE /feedback integration tests.
+
+[33mcommit f05179483427a9e29e10f38b753e0bc69a9ad820[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 2 10:57:37 2024 +0200
+
+    Adding integrations tests for POST /feedback requests.
+
+[33mcommit 77dc92ded3459226139242be7dfee62b61e54484[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Oct 2 09:40:57 2024 +0200
+
+    Refactoring the load tests.
+
+[33mcommit 033aec10ef18d774e7bccde12b8b1d9dda76c7fe[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Oct 1 12:58:07 2024 +0200
+
+    Modifying the Jenkinsfile by setting environment variables.
+
+[33mcommit 872bc099c7cc5d0417a85b17ff447b8ea42067a4[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Oct 1 12:39:56 2024 +0200
+
+    Adding kubernetes permission configs to Jenkins agent.
+
+[33mcommit 524159921865e74949462654a65e1f4682db05d6[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Oct 1 11:36:43 2024 +0200
+
+    Fixing Jenkinsfile to use the kubectl container.
+
+[33mcommit 23252d712b959712c212cd9646605375ab0823b2[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Oct 1 11:32:51 2024 +0200
+
+    Fixing the kubectl container in the pod template for Jenkins.
+
+[33mcommit b7708910af801dc1201349544e469dfcf1fc4537[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Oct 1 11:24:14 2024 +0200
+
+    Adding kubectl container to Jenkins agent pod template.
+
+[33mcommit 25345895f4a558341e1132222a761c52733c77d2[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Oct 1 10:30:13 2024 +0200
+
+    Adding dockerhub credentials to push the docker image in Jenkinsfile.
+
+[33mcommit baef4f6ac4174de787f19479dcd3e80061f39217[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Oct 1 09:36:23 2024 +0200
+
+    Fixing the docker container definition and the docker build command in Jenkinsfile.
+
+[33mcommit 7fa1dd0012a54da296e1c680bd972ef9b5f0b1e7[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Sep 30 13:02:48 2024 +0200
+
+    Adding docker container pod template to Jenkinsfile.
+
+[33mcommit 1b769721318e1898b1408f61fb0a4fa1db370a3e[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Sep 30 12:34:01 2024 +0200
+
+    Developing the test pipeline in the Jenkninsfile.
+
+[33mcommit cc14ab43e2f85eb22c1bca7e7b887c7083d1affb[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Sep 30 11:36:12 2024 +0200
+
+    Adding Jenkinsfile.
+
+[33mcommit 3064635dc2a70c9fcd73424b95d34061bed3a2e4[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Sep 25 13:56:49 2024 +0200
+
+    Modifying the Docker Compose file to build the backend app, removing the frontend part and modifying the related docker commands.
+
+[33mcommit 60f7c795c0548af6cbc771c9a3f71989f4609ee9[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Sep 25 12:55:44 2024 +0200
+
+    Adjusting docker compose to add the frontend. Adding necessary docker commands.
+
+[33mcommit bbdd534dce208bc1531922921b7a6a1d927c4eb7[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Sep 25 10:23:56 2024 +0200
+
+    Adding CORS.
+
+[33mcommit 575d8f3dd95826333ba9a993ee5562778fbcd07f[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Sep 23 14:42:40 2024 +0200
+
+    Modifying kubernetes configs for the GKE cluster.
+
+[33mcommit a48af0b5335e992fbe13ebf56ce71a9e27ca5364[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Sep 23 11:57:52 2024 +0200
+
+    Testing the GKE deployment with helloworld.
+
+[33mcommit eb31449699b444f4eaf6cfb6c7d97632c829c35e[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Fri Sep 20 14:05:15 2024 +0200
+
+    Adding load tests.
+
+[33mcommit 0e73bbabfef80788878795db85a2e141412ec2a6[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Fri Sep 20 11:43:37 2024 +0200
+
+    Adding horizontal pod autoscaler to kubernetes configs.
+
+[33mcommit 1d89556608c6f26efcaf03af09cedab8c42cc1bd[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Fri Sep 20 11:23:09 2024 +0200
+
+    Adding config maps and secrets to kubernetes configs.
+
+[33mcommit a37a4bf9c00e2f90a666351ec797f34ed52bb531[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Fri Sep 20 09:55:27 2024 +0200
+
+    Adding persistent volume kubernetes configs.
+
+[33mcommit a530140b7c1cf2f59a605046eec3136d02ad0c6b[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Thu Sep 19 09:52:58 2024 +0200
+
+    Fixing kubernetes labels and selectors.
+
+[33mcommit 0b69ecb8d97ed7c4280c2c01f57da93f9dedbc55[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Sep 18 12:56:10 2024 +0200
+
+    Adding kubernetes templates.
+
+[33mcommit ebeff780a7b63c5059b9dc43cc51b56a40938cb5[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Sep 16 12:00:40 2024 +0200
+
+    Adjusting the ECS terraform configs to add the cloudwatch logging.
+
+[33mcommit e2218d0f805b764a4c6ee7587595e9f888c3e8d3[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Sep 16 11:45:16 2024 +0200
+
+    Modifying the terraform ECS configs to use with the feedback app.
+
+[33mcommit 0040ead28bab025d8536416e613f463efd88925c[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Sep 16 10:52:18 2024 +0200
+
+    Adding ECS terraform configs.
+
+[33mcommit 39287a0f34451890666302718a4b9faaf1114cf7[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Fri Sep 13 13:15:14 2024 +0200
+
+    Modified gitignore.
+
+[33mcommit b41bd66450aba1190fe19fed3a1f0430cb3a052b[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Fri Sep 13 13:04:34 2024 +0200
+
+    Adding terraform and modifying gitignore.
+
+[33mcommit 2a07def51fcf2d7dfadca47c01b14e0ac0318d55[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Sep 11 13:11:33 2024 +0200
+
+    Fixing the userdata script.
+
+[33mcommit 6237df4726713e889f35e5826c7921d0e2898e46[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Sep 11 10:40:09 2024 +0200
+
+    Adding user data script for installing docker on EC2 and starting docker-compose app.
+
+[33mcommit 84c9daf95e09e6f0ac755e376f10b409c8ed360f[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Sep 11 09:47:52 2024 +0200
+
+    Adjusting the backend app image name in the docker compose file.
+
+[33mcommit 0329173666ede80370183a055d26e2a094e26aab[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Sep 10 13:03:22 2024 +0200
+
+    Fixing the docker-compose configuration by adding postgres healthcheck.
+
+[33mcommit b18c84f10118f5451bdbe6ad324ec33b5d958803[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Sep 10 12:18:05 2024 +0200
+
+    Adding docker-compose configuration.
+
+[33mcommit 5a01e16e711bb6dde7ac93fa13b44051b1180d13[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Sep 10 11:16:00 2024 +0200
+
+    Removing environment variables from the dockerfile.
+
+[33mcommit ec5b3e4fba575e3c179c0303df9b3d36c85ec458[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Sep 10 10:27:09 2024 +0200
+
+    Refactoring to use the environment variables for the database connection information.
+
+[33mcommit f1a54424274ac6514d93faab570883ccbdbf9e84[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Sep 10 09:33:44 2024 +0200
+
+    Adding shell commands to stop and remove containers.
+
+[33mcommit 2c3ed22fc2c1bf377ddf33c3ccd8883b923e62ad[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Tue Sep 10 09:30:49 2024 +0200
+
+    Adding shell commands to start docker containers.
+
+[33mcommit 114bd810911c7e7a55dadf11949f1758566458fb[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Sep 9 11:51:29 2024 +0200
+
+    Refactoring the post, get, delete /feedback routes to use the database.
+
+[33mcommit b8c36a7636bd3f5d10e68f8492adbe7cba00371c[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Sep 9 11:03:22 2024 +0200
+
+    Adding posgres connection pool and create database code.
+
+[33mcommit 2e8a901c91a06182df9b29d024f347d4a31b9585[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Mon Sep 9 08:10:13 2024 +0200
+
+    Adding nodemon for development purposes.
+
+[33mcommit 83c18ac0e001e5a7a51511703a56f0c6a03a5e1d[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Thu Sep 5 13:00:45 2024 +0200
+
+    Adding Dockerfile.
+
+[33mcommit 13e53fb124b5bf0f1a18fc20d478e19249348a86[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Thu Sep 5 10:05:56 2024 +0200
+
+    Moving the data storage to the data folder. Fixing the delete /feedback logic.
+
+[33mcommit bd4bea505d3ea8476f029d90b076b2f6c67ef325[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Sep 4 12:59:54 2024 +0200
+
+    Implementing the get /feedback route and delete /feedback/title route.
+
+[33mcommit 1c2a333bd288b1cbf2c47094041f4d4de61aab2c[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Sep 4 12:39:48 2024 +0200
+
+    Adding the post /feedback route.
+
+[33mcommit ddc0884cb24d50792b057de1884a202ce85aa699[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Sep 4 12:16:05 2024 +0200
+
+    Adding helper functions.
+
+[33mcommit c541299444594cecf47e5a00d484c0cfa93da854[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Sep 4 11:14:00 2024 +0200
+
+    Add basic app structure.
+
+[33mcommit 0ec9f239c6f0d2b3763485fdcebb9d0520a90577[m
+Author: Galina Atamankina <g.atamankina@gmail.com>
+Date:   Wed Sep 4 11:15:37 2024 +0200
+
+    Initial commit

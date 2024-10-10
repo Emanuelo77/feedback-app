@@ -1,8 +1,8 @@
 import { body, validationResult } from 'express-validator';
 
 export const feedbackValidation = [
-    body('title').notEmpty().withMessage("Titel ist erforderlich."),
-    body('text').notEmpty().withMessage("Text ist erforderlich."),
+    body('title').notEmpty().withMessage("Title is required."),
+    body('text').notEmpty().withMessage("Text is required."),
     (req, res, next) => {
         const errors = validationResult(req);
         if (!errors.isEmpty()) {

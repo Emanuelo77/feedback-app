@@ -11,9 +11,9 @@ pipeline {
     }
     
     environment {
-        GITHUB_REPO = 'https://github.com/Gulcan82/Galina-feedback-app.git'
+        GITHUB_REPO = 'https://github.com/Emanuelo77/feedback-app.git'
         DOCKER_CREDENTIALS_ID = 'dockerhub-token'
-        DOCKER_REPO = 'gulcan82/g-feedback-app'
+        DOCKER_REPO = 'Emanuelo77/g-feedback-app'
         IMAGE_TAG = "${BUILD_NUMBER}"
         DOCKER_IMAGE = "${DOCKER_REPO}:${IMAGE_TAG}"
     }
@@ -158,10 +158,7 @@ pipeline {
                     }
                 }
             }
-            echo 'Docker image successfully pushed with "latest" tag.'
-             
+            echo 'Docker image successfully pushed with "latest" tag.'  
         }
-
     } 
 }
-    

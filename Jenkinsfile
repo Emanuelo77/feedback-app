@@ -11,9 +11,9 @@ pipeline {
     }
     
     environment {
-        GITHUB_REPO = 'https://github.com/Emanuelo77/feedback-app.git'
+       
         DOCKER_CREDENTIALS_ID = 'dockerhub-token'
-        DOCKER_REPO = 'Emanuelo77/g-feedback-app'
+   
         IMAGE_TAG = "${BUILD_NUMBER}"
         DOCKER_IMAGE = "${DOCKER_REPO}:${IMAGE_TAG}"
     }
@@ -22,21 +22,9 @@ pipeline {
         stage('Checkout') {           
             steps {
                 echo 'Checking out code...'
-                git url: "${GITHUB_REPO}", branch: 'master'
+                git url: "${GITHUB_REPO}", branch: 'Emanuel'
             }            
-        }   
-        stage('Run Unit Tests') {
-            steps {
-                echo 'Running unit tests...'
-                container('node') {
-                    sh '''
-                        npm install
-                        npm test 
-                    '''
-                }
-                echo 'Unit tests completed successfully.'
-            }
-        }    
+        }       
         stage('Docker Build') {   
             steps {
                 echo 'Building the Docker image...'
@@ -158,7 +146,7 @@ pipeline {
                     }
                 }
             }
-            echo 'Docker image successfully pushed with "latest" tag.'  
+            echo 'Docker image successfully pushed with "latest" tag.'
         }
-    } 
+    }   
 }

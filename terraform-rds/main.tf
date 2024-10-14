@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "terraform-state-feedback-api-273427624300"
+    bucket = "terraform-state-feedback-api-525313980360"
     key = "terraform/feedback-api/terraform.tfstate"
     region = "eu-central-1"
     encrypt = true
